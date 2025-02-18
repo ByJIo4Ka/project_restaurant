@@ -1,0 +1,21 @@
+{
+    "dbcode.connections": [
+        {
+            "connectionId": "4YhTcBTp681yRoqxhjDa-",
+            "name": "ByJIo4Ka",
+            "driver": "mysql",
+            "connectionType": "host",
+            "host": "147.45.184.12",
+            "port": 3306,
+            "ssl": false,
+            "username": "1_Ivanov",
+            "password": "bdk6lgE9baoc3Eyx",
+            "savePassword": "yes",
+            "database": "1_Ivanov",
+            "connectionTimeout": 30,
+            "driverOptions": {
+                "retrievePublickey": true
+            }
+        }
+    ]
+}
