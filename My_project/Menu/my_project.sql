@@ -3,18 +3,29 @@ DROP TABLE menu;
 CREATE TABLE menu (
     names_id INT,
     names VARCHAR(50),
-    price INT,
+    price DECIMAL(10, 2),
     type_of_cooking VARCHAR(50),
-    structure VARCHAR(255)
+    description TEXT,
+    is_available BOOLEAN,
+    created_at TIMESTAMP
 );
 
 INSERT INTO menu (
-names_id, names, price, type_of_cooking,
-structure) VALUES
-(1, 'Burger', 99, 'fastfood', 'Beef_Patty, Lettuce, Tomato, Cheese'),
+names_id, names, price, type_of_cooking, description, is_available, created_at) VALUES
+(1, 'Борщ', 250.00, 'Супы', 'Традиционный украинский борщ с говядиной и сметаной', true,'2023-10-01 12:00:00'),
 
-(2, 'pizza_margarita', 340, 'fastfood', 'sousadge, cheese_pormisano, Tomato_cherry, gluten_free_dough'),
+(2, 'Цезарь', 180.00, 'Салаты', 'Салат с курицей, сухариками и соусом Цезарь.', true, '2023-10-01 12:00:00'),
 
-(3, 'pizza_paperonni', 300, 'fastfood', 'sousadge, cheese_pormisano, Tomato_cherry, common_dough');
+(3, 'Тирамису', 150.00, 'Десерты', 'Классический итальянский десерт с кофе и маскарпоне.', true, '2023-10-01 12:00:00'),
+
+(4, 'Стейк Рибай', 1200.00, 'Основные', 'Стейк из говяжей вырезки с соусом и овощами.', true, '2023-10-01 12:00:00'),
+
+(5, 'Паста Карбонара', 350.00, 'Паста', 'Паста с беконом, сливочным соусом и пармезаном.', true, '2023-10-01 12:00:00'),
+
+(6, 'Греческий салат', 220.00, 'Салаты', 'Салат с помидорами, огурцами, оливками и фетой.', true, '2023-10-01 12:00:00'),
+
+(7, 'Пельмени', 300.00, 'Основные', 'Домашние пельмени с говядиной и свининой.', true, '2023-10-01 12:00:00'),
+
+(8, 'Шоколадный фондан', 200.00, 'Десерты', 'Десерт с жидкой шоколадной начинкой и мороженым.', true, '2023-10-01 12:00:00');
 
 SELECT * from menu
