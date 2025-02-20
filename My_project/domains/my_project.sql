@@ -12,9 +12,7 @@ CREATE TABLE menu (
 );
 
 ALTER TABLE menu RENAME TO dishes;
-
 ALTER TABLE dishes DROP COLUMN names_id;
-
 ALTER TABLE dishes
 CHANGE COLUMN names dishes_names VARCHAR(50),
 CHANGE COLUMN price dishes_price DECIMAL(10, 2),
