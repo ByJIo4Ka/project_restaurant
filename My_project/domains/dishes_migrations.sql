@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS menu;
 
 CREATE TABLE menu (
     names_id INT,
-    names VARCHAR(50),
+    names VARCHAR(50) PRIMARY KEY,
     price DECIMAL(10, 2),
     type_of_cooking VARCHAR(50),
     description TEXT,
@@ -14,7 +14,7 @@ CREATE TABLE menu (
 ALTER TABLE menu RENAME TO dishes;
 ALTER TABLE dishes DROP COLUMN names_id;
 ALTER TABLE dishes
-CHANGE COLUMN names dishes_names VARCHAR(50),
+CHANGE COLUMN names dishes_names VARCHAR(50) PRIMARY KEY,
 CHANGE COLUMN price dishes_price DECIMAL(10, 2),
 CHANGE COLUMN type_of_cooking dishes_type_of_cooking VARCHAR(50),
 CHANGE COLUMN description dishes_description TEXT,

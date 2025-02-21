@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS dishes;
 CREATE TABLE dishes (
-    dishes_names VARCHAR(50),
+    dishes_names VARCHAR(50) PRIMARY KEY,
     dishes_price DECIMAL(10, 2),
     dishes_type_of_cooking VARCHAR(50),
     dishes_description TEXT,
